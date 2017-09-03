@@ -1,5 +1,5 @@
 {
-  "name": "npm-package-demo",
+  "name": "npm-package-demo11",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/Toge66/npm-package-demo#readme",
   "dependencies": {
-    "jest": "^20.0.4"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
   }
 }
