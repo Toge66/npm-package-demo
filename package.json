@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Toge66/npm-package-demo#readme",
   "dependencies": {
+    "color": "^2.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
