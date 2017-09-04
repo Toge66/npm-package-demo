@@ -3,7 +3,7 @@ exports.printMsg = function() {
 	console.log("This message is from the npm-package-demo11 module".red)
 }
 
-exports.printPath = function() {
+export function printPath() {
 	let path = __dirname
 	console.log(`current path is：${path}`.blue)
 }

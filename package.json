@@ -2,9 +2,9 @@
   "name": "npm-package-demo11",
   "version": "1.0.8",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publist2npm": "mkdir -p lib && babel ./src -d ./lib && mkdir -p build && cp -R package.json src lib build && npm publish ./build"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "jest": "^20.0.4",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
