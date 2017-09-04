@@ -4,7 +4,7 @@
   "description": "",
   "main": "./lib",
   "scripts": {
-    "publist2npm": "mkdir -p lib && babel ./src -d ./lib && mkdir -p build && cp -R package.json src lib build && npm publish ./build"
+    "publish2npm": "mkdir -p lib && babel ./src -d ./lib && mkdir -p build && cp -R package.json src lib build && npm publish ./build"
   },
   "repository": {
     "type": "git",
