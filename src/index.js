@@ -11,7 +11,3 @@ exports.printPatch = function () {
 exports.fnAdd = function (a, b) {
   return a + b
 }
-
-exports.fnAdd = function (a, b) {
-  return a + b
-}
