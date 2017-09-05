@@ -1,6 +1,8 @@
-const demo = require('../src/index')
+
+import {fnAdd, printPath} from '../src/index'
 
 test('simply:add:test', () => {
-  const result = demo.fnAdd(21,6)
+  const result = fnAdd(21,6)
   expect(result).toEqual(27)
+
 })

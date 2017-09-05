@@ -1,13 +1,14 @@
-const color = require('colors')
-exports.printMsg = function () {
+import 'colors'
+
+export function printMsg () {
   console.log('This message is from the npm-package-demo11 module'.red)
 }
 
-exports.printPath = function () {
+export function printPath () {
   let path = __dirname
   console.log(`current path is：${path}`.blue)
 }
 
-exports.fnAdd = function (a, b) {
+export function fnAdd (a, b) {
   return a + b
 }
