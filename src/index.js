@@ -12,3 +12,24 @@ export function printPath () {
 export function fnAdd (a, b) {
   return a + b
 }
+
+export default class MathFn extends Object{
+
+  constructor (value = 0) {
+    super()
+    this.__value = value
+  }
+  add = (r) => {
+    this.__value += r
+    return this
+  }
+
+  minutes = (r) => {
+    this.__value -= r
+    return this
+  }
+
+  value = () => {
+    return this.__value
+  }
+}
