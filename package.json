@@ -7,15 +7,8 @@
     "build": "mkdir -p lib && babel ./src -d ./lib",
     "publish2npm": "mkdir -p build && npm version patch && cp -R package.json src lib build && npm publish ./build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Toge66/npm-package-demo.git"
-  },
   "author": "taochang",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Toge66/npm-package-demo/issues"
-  },
+  "license": "ISC"
   "homepage": "https://github.com/Toge66/npm-package-demo#readme",
   "dependencies": {
     "colors": "^1.1.2",
