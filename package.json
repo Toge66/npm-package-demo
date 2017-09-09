@@ -8,8 +8,7 @@
     "publish2npm": "mkdir -p build && npm version patch && cp -R package.json src lib build && npm publish ./build"
   },
   "author": "taochang",
-  "license": "ISC"
-  "homepage": "https://github.com/Toge66/npm-package-demo#readme",
+  "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
     "react": "^15.6.1",
