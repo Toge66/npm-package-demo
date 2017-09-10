@@ -9,7 +9,6 @@ before_install:
   - echo "" > .npmrc
   - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}\n" >> .npmrc
 stage: build
-  script:
     - npm -v
     - node -v
     - npm install
