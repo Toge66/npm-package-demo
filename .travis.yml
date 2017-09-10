@@ -1,9 +1,17 @@
 language: node_js
 node_js:
   - iojs
+stages:
+  - build
+  - deploy
 before_install:
+  - npm i -g npm@version-number
   - echo "" > .npmrc
   - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}\n" >> .npmrc
-deploy:
-  -npm run build
-  -npm run publish2npm
+stage: build
+  script:
+    - npm -v
+    - node -v
+    - npm install
+    - npm run build
+    - npm run publish2npm
