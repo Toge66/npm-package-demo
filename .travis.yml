@@ -5,7 +5,6 @@ stages:
   - build
   - deploy
 before_install:
-  - echo "" > .npmrc
   - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}\n" >> .npmrc
 stage: build
     - npm -v
