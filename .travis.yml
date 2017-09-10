@@ -11,5 +11,6 @@ stage: build
     - npm -v
     - node -v
     - npm install
+    - npm run test
     - npm run build
     - npm run publish2npm

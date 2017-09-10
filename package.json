@@ -5,7 +5,8 @@
   "main": "./lib",
   "scripts": {
     "build": "mkdir -p lib && babel ./src -d ./lib",
-    "publish2npm": "mkdir -p build && npm version patch && cp -R package.json src lib build && npm publish ./build"
+    "publish2npm": "mkdir -p build && npm version patch && cp -R package.json src lib build && npm publish ./build",
+    "test": "jest"
   },
   "author": "taochang",
   "license": "ISC",
