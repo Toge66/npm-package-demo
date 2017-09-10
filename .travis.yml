@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - iojs
+before_install:
+  - echo "" > .npmrc
+  - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}\n" >> .npmrc
+deploy:
+  -npm run build
+  -npm run publish2npm
